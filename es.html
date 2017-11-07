@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Picard API Service</title>
+    <!-- needed for adaptive design -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--
+    ReDoc doesn't change outer page styles
+    -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+  body {
+    color:white;
+    background: url(stripes7.jpg) repeat-x;
+  }
+
+  #logo {
+    background: url(logo.png) no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    width: 244px;
+    height: 50px;
+  }
+  
+  #logo_card{ background: url(Logotipo_picard.png) no-repeat;
+    position: absolute;
+    right: 10px;
+    z-index:10;
+    top: 20px;
+    margin:0px;
+    border:0px;
+    padding:0px;
+    width: 140px;
+    height: 63px;
+  }
+
+    </style>
+  </head>
+  <body>
+    <div style="margin-bottom:136px">
+      <div id="logo" alt="Globalia" ></div>
+      <div id="logo_card" alt="Picard"></div>
+    </div>
+    <redoc spec-url='./es.json'></redoc>
+    <script src="./redoc.min.js"> </script>
+  </body>
+</html>
